@@ -38,7 +38,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; @DateTime.Now.Year - RandomQuotes - @Environment.GetEnvironmentVariable("RANDOM_SECRET_PHRASE")
+            &copy; @DateTime.Now.Year  - RandomQuotes - @Environment.GetEnvironmentVariable("RANDOM_SECRET_PHRASE")
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -47,6 +47,7 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
 
 
 
