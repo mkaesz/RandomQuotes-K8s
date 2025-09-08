@@ -62,6 +62,11 @@ spec:
                 name: randomquotes-app-cluster-ip-service
                 port:
                   number: 6801
+  tls:
+  - hosts:
+    - <host>
+    secretName: randomquotes-tls
+
 
 
 
