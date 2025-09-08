@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - RandomQuotes</title>
-    <link rel="stylesheet" asp-href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" asp-href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" asp-href="~/RandomQuotes.Web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/RandomQuotes.Web.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -41,10 +41,11 @@
             &copy; @DateTime.Now.Year - RandomQuotes - RandomQuotes Phrase: @Environment.GetEnvironmentVariable("RANDOM_SECRET_PHRASE")
         </div>
     </footer>
-    <script asp-src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script asp-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script asp-src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
 
