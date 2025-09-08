@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: randomquotes-web
-          image: octopussamples/randomquotes-k8s:0.1.32
+          image: mskaesz/randomquotes-k8s:#{Octopus.Action.Package[randomquotes-k8s].PackageVersion}
           resources:
             requests:
               memory: "64Mi"
@@ -62,6 +62,7 @@ spec:
                 name: randomquotes-app-cluster-ip-service
                 port:
                   number: 6801
+
 
 
 
