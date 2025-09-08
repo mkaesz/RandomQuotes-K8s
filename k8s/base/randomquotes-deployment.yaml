@@ -63,9 +63,10 @@ spec:
                 port:
                   number: 6801
   tls:
-  - hosts:
-    - <host>
-    secretName: randomquotes-tls
+    - hosts:
+      - myhost
+      secretName: randomquotes-tls
+
 
 
 
