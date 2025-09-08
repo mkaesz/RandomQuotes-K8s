@@ -49,21 +49,20 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: randomquotes-ingress-nginx 
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-    - host: mkaesz-wandb.aws-wandb.msk.pub
+    - host: <host>
       http:
         paths:
-          - path: /development
+          - path: /
             pathType: Prefix
             backend:
               service:
                 name: randomquotes-app-cluster-ip-service
                 port:
                   number: 6801
+
 
 
 
